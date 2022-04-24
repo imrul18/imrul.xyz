@@ -5,6 +5,8 @@ const educationDataRoutes = require('./routes/educationDataRoutes')
 const skillsDataRoutes = require('./routes/skillsDataRoutes')
 const experienceDataRoutes = require('./routes/experienceDataRoutes')
 const serviceDataRoutes = require('./routes/serviceDataRoutes')
+const projectDataRoutes = require('./routes/projectDataRoutes')
+const achievementDataRoutes = require('./routes/achievementDataRoutes')
 const contactDataRoutes = require('./routes/contactDataRoutes')
 const sendMailRoutes = require('./routes/sendMailRoutes')
 const cors = require('cors');
@@ -21,6 +23,8 @@ app.use('/skillsData', skillsDataRoutes)
 app.use('/experienceData', experienceDataRoutes)
 app.use('/serviceData', serviceDataRoutes)
 app.use('/contactData', contactDataRoutes)
+app.use('/projectData', projectDataRoutes)
+app.use('/achievementData', achievementDataRoutes)
 app.use('/sendMail', sendMailRoutes)
 
 app.get('/', (req, res) => {

@@ -8,7 +8,7 @@ const con = mysql.createConnection({
    insecureAuth: false
 });
 
-//  var con = mysql.createConnection({
+//  const con = mysql.createConnection({
 //      host        : "localhost",
 //      user        : "imrul_afnan",
 //      password    : "RUfu-,TRlCXm",

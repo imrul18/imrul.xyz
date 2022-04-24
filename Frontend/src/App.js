@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
-import { Main, BlogPage, ProjectPage } from './pages'
+import { Main, ProjectPage } from './pages'
 import { BackToTop } from './components'
 import ScrollToTop from './utils/ScrollToTop'
 
 import './App.css'
+import Loading from './components/Loading/Loading';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -17,11 +18,7 @@ function App() {
   return (
     <div className="app">
       {isLoading &&
-        <>
-          <div className='loadercontainer'>
-            <div class="loader"></div>
-          </div>
-        </>
+        <Loading />
       }
       {!isLoading &&
         <>
@@ -29,7 +26,6 @@ function App() {
             <ScrollToTop />
             <Switch>
               <Route path="/" exact component={Main} />
-              <Route path="/blog" exact component={BlogPage} />
               <Route path="/projects" exact component={ProjectPage} />
 
               <Redirect to="/" />

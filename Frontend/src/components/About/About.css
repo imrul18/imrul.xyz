@@ -68,6 +68,23 @@
     flex: 0.5;
 }
 
+.about-body .education-card {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+.education-details{
+  padding: 120px;
+}
+
 @media (min-width: 992px) and (max-width: 1380px) {
 
     .about-description > h2 {
@@ -81,6 +98,9 @@
     .about-img>img {
         width: 300px;
     } 
+    .education-details{
+      padding: 120px;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -118,6 +138,9 @@
         width: 250px;
         flex: 0.4;
     }
+    .education-details{
+      padding: 100px;
+    }
 
 }
 
@@ -129,6 +152,9 @@
   }
   .about-description > h2{
     align-self: center;
+  }
+  .education-details{
+    padding: 80px;
   }
 
 }
@@ -156,5 +182,8 @@
 
     .about-img > img {
         width: 200px;
+    }
+    .education-details{
+      padding: 20px;
     }
 }

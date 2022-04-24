@@ -7,22 +7,6 @@
 .root {
     height: 100vh;
   }
-
-.loadercontainer {
-    background-color:#212121;
-    height: 100%;
-  }
-
-.loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #F56539;
-    width: 480px;
-    height: 480px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
-  }
-
   .fa {
     font-size: 45px;
     width: 50px;

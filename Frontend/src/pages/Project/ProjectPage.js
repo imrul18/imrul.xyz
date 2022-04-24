@@ -70,7 +70,7 @@ function ProjectPage() {
     return (
         <div className="projectPage" style={{backgroundColor: theme.secondary}}>
             <Helmet>
-                <title>{headerData.name} | Projects</title>
+                <title>{headerData.name}'s Projects</title>
             </Helmet>
             <div className="projectPage-header" style={{backgroundColor:theme.primary}}>
                 <Link to="/">

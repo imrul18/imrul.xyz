@@ -1,7 +1,8 @@
 import axios from 'axios'
+import { baseurl } from './baseurl';
 export var skillsData
 
-axios.get('http://localhost:5000/skillsData')
+axios.get(baseurl+'/skillsData')
     .then((response) => {
         let text = response.data[0].skills;
         skillsData = text.split(",");

@@ -3,7 +3,7 @@ const router = express.Router();
 
 const { insertdata, updatedata, deletedata, selectdata, customQuery } = require('../database/query.js');
 
-const tableName = "headerdata";
+const tableName = "projectdata";
 
 router.post('/', (req, res) => {
     const data = req.body;
@@ -12,7 +12,7 @@ router.post('/', (req, res) => {
 
 router.put('/', (req, res) => {
     const data = req.body;
-    const condition = `username = '${data.username}'`;
+    const condition = `serial = '${data.serial}'`;
     updatedata(res, tableName, data, condition)
 })
 

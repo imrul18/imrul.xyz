@@ -1,0 +1,25 @@
+.landing {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    flex-direction: column;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #F56539;
+    width: 240px;
+    height: 240px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+.text {
+    font-size: 48px;
+    color: #F56539;
+    font-weight: 600;
+}

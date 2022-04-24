@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
+import { Helmet } from 'react-helmet';
 import CloseIcon from '@material-ui/icons/Close';
 import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
@@ -161,11 +162,15 @@ function Contacts() {
     };
 
     return (
+        
         <div
             className='contacts'
             id='contacts'
             style={{ backgroundColor: theme.secondary }}
         >
+            <Helmet>
+                <title>{headerData.name}'s Contact</title>
+            </Helmet>
             <div className='contacts--container'>
                 <h1 style={{ color: theme.primary }}>Contacts</h1>
                 <div className='contacts-body'>
