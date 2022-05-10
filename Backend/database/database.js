@@ -10,8 +10,8 @@ const con = mysql.createConnection({
 
 //  const con = mysql.createConnection({
 //      host        : "localhost",
-//      user        : "imrul_afnan",
-//      password    : "RUfu-,TRlCXm",
+//      user        : "imrul_api",
+//      password    : "(r)hX^V{yW_2",
 //      database    : 'imrul_MAIN_DOMAIN',
 //      insecureAuth : false
 //  });

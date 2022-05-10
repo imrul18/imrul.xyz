@@ -15,6 +15,7 @@ import {
     FaGithub,
     FaYoutube,
     FaBlogger,
+    FaFacebook,
 } from 'react-icons/fa';
 import Contacts from '../Contacts/Contacts';
 
@@ -152,6 +153,19 @@ function Landing(props) {
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Blogger'
+                                />
+                            </a>
+                        )}
+                        {socialsData.facebook && (
+                            <a
+                                href={socialsData.facebook}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaFacebook
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='facebook'
                                 />
                             </a>
                         )}

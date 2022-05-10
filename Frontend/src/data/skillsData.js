@@ -12,7 +12,7 @@ axios.get(baseurl+'/skillsData')
 
 /* 
     HTML
-    CSS
+    HTML
     JS 
     React
     Next JS

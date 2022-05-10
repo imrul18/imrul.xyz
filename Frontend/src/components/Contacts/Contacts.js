@@ -17,6 +17,7 @@ import {
     FaInstagram,
     FaGitlab,
     FaMediumM,
+    FaFacebook,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
@@ -426,6 +427,16 @@ function Contacts() {
                                     className={classes.socialIcon}
                                 >
                                     <FaGitlab aria-label='GitLab' />
+                                </a>
+                            )}
+                            {socialsData.facebook && (
+                                <a
+                                    href={socialsData.facebook}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={classes.socialIcon}
+                                >
+                                    <FaFacebook aria-label='Facebook' />
                                 </a>
                             )}
                         </div>

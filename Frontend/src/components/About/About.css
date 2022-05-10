@@ -81,9 +81,9 @@
   transition: background-color 200ms ease-in-out;
 }
 
-.education-details{
+.about-body .education-card .education-details{
   padding: 120px;
-}
+} 
 
 @media (min-width: 992px) and (max-width: 1380px) {
 
@@ -98,7 +98,7 @@
     .about-img>img {
         width: 300px;
     } 
-    .education-details{
+    .about-body .education-card .education-details{
       padding: 120px;
     }
 }
@@ -138,7 +138,7 @@
         width: 250px;
         flex: 0.4;
     }
-    .education-details{
+    .about-body .education-card .education-details{
       padding: 100px;
     }
 
@@ -153,7 +153,7 @@
   .about-description > h2{
     align-self: center;
   }
-  .education-details{
+  .about-body .education-card .education-details{
     padding: 80px;
   }
 
@@ -183,7 +183,7 @@
     .about-img > img {
         width: 200px;
     }
-    .education-details{
+    .about-body .education-card .education-details{
       padding: 20px;
     }
 }

@@ -1,7 +1,8 @@
 import axios from 'axios'
+import { baseurl } from './baseurl';
 export var projectsData
 
-axios.get('http://localhost:5000/projectData')
+axios.get(baseurl+'/projectData')
     .then((response) => {
         projectsData = response.data;
     });
